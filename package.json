@@ -46,7 +46,7 @@
   "dependencies": {
     "async": "^1.3.0",
     "bitcoind-rpc": "satoshilabs/bitcoind-rpc#584281290cb98c02bb14ef2036dcabdca65b955f",
-    "bitcore-lib": "satoshilabs/bitcore-lib#9f7930f9e4e3849938e09fcec985de4ef85a535d",
+    "bitcore-lib": "satoshilabs/bitcore-lib#8e2caed768aa269b433a14981f0e36c0838a3d91",
     "body-parser": "^1.13.3",
     "colors": "^1.1.2",
     "commander": "^2.8.1",
