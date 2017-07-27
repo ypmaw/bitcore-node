@@ -5,18 +5,18 @@ set -e
 root_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/.."
 platform=`uname -a | awk '{print tolower($1)}'`
 arch=`uname -m`
-version="0.14.2"
+version="0.14.5"
 url="https://github.com/satoshilabs/bitcoin/releases/download"
-tag="v0.14.2-optinuasf-bitcore"
+tag="v0.14.5"
 
 if [ "${platform}" == "linux" ]; then
     if [ "${arch}" == "x86_64" ]; then
-        tarball_name="bitcoin-${version}-linux64.tar.gz"
+        tarball_name="bitcoin-abc-${version}-linux64.tar.gz"
     elif [ "${arch}" == "x86_32" ]; then
-        tarball_name="bitcoin-${version}-linux32.tar.gz"
+        tarball_name="bitcoin-abc-${version}-linux32.tar.gz"
     fi
 elif [ "${platform}" == "darwin" ]; then
-    tarball_name="bitcoin-${version}-osx64.tar.gz"
+    tarball_name="bitcoin-abc-${version}-osx64.tar.gz"
 else
     echo "Bitcoin binary distribution not available for platform and architecture"
     exit -1
