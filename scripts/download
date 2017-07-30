@@ -7,7 +7,7 @@ platform=`uname -a | awk '{print tolower($1)}'`
 arch=`uname -m`
 version="0.14.2"
 url="https://github.com/satoshilabs/bitcoin/releases/download"
-tag="v0.14.2-optinuasf-bitcore"
+tag="v0.14.2-optinuasf1.0-bitcore"
 
 if [ "${platform}" == "linux" ]; then
     if [ "${arch}" == "x86_64" ]; then
